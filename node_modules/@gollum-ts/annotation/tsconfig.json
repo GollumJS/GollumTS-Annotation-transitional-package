@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"outDir": "dist/cjs",
+		"target": "es5",
+		"module": "commonjs",
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"lib": [
+			"es6"
+		]
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"examples/**/*.ts",
+		"tests/**/*.ts"
+	]
+}

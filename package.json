@@ -1,0 +1,48 @@
+{
+  "name": "gollumts-annotation",
+  "version": "5.1.0",
+  "description": "Transition deprecated package for @gollum-ts/annotation.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "esnext": "dist/esm/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -p tsconfig.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "clean": "rm -fr dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:GollumJS/gollumts-annotation.git"
+  },
+  "keywords": [
+    "simple",
+    "annotation",
+    "typescript",
+    "persistant",
+    "decorator"
+  ],
+  "author": "Damien Duboeuf <smeagolworms4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GollumJS/gollumts-annotation/issues"
+  },
+  "homepage": "https://github.com/GollumJS/gollumts-annotation/blob/master/README.md",
+  "dependencies": {
+    "@gollum-ts/annotation": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.2"
+  },
+  "files": [
+    "README.mb",
+    "LICENSE",
+    "tsconfig.json",
+    "tsconfig.esm.json",
+    "tsconfig.test.json",
+    "package.json",
+    "src/**/*.ts",
+    "dist/**/*.js",
+    "dist/**/*.js.map"
+  ]
+}
