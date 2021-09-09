@@ -1,6 +1,6 @@
 {
   "name": "gollumts-annotation",
-  "version": "5.1.1",
+  "version": "5.1.3",
   "description": "Transition deprecated package for @gollum-ts/annotation.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -9,6 +9,7 @@
     "build": "npm run clean && npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc -p tsconfig.json",
     "build:esm": "tsc -p tsconfig.esm.json",
+    "typings": "./dist/typings/index.d.ts",
     "clean": "rm -fr dist"
   },
   "repository": {
@@ -29,7 +30,7 @@
   },
   "homepage": "https://github.com/GollumJS/GollumTS-Annotation-transitional-package/blob/master/README.md",
   "dependencies": {
-    "@gollum-ts/annotation": "^5.1.0"
+    "@gollum-ts/annotation": "^5.1.3"
   },
   "devDependencies": {
     "typescript": "^4.4.2"
@@ -43,6 +44,7 @@
     "package.json",
     "src/**/*.ts",
     "dist/**/*.js",
-    "dist/**/*.js.map"
+    "dist/**/*.js.map",
+    "dist/**/*.d.ts"
   ]
 }
