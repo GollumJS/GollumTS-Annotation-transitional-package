@@ -4,5 +4,5 @@ Deprecated transitionnal package.
 
 You must use:
 
-	- [https://www.npmjs.com/package/@gollum-ts/annotation]() 
-	- [https://github.com/GollumJS/gollumts-annotation]()
+ - NPM: https://www.npmjs.com/package/@gollum-ts/annotation
+ - GitHub: https://github.com/GollumJS/gollumts-annotation
